@@ -145,6 +145,7 @@ const appendSingleViewer = () => {
     pressMoveListener: evt => {
       imgDom.translateX += evt.deltaX * imgMoveFactor
       imgDom.translateY += evt.deltaY * imgMoveFactor
+      triggerPointEnd(imgDom, imgMinScale, imgMaxScale)
     },
     singleTapListener: () => {
       if(clickClosable) hideViewer()

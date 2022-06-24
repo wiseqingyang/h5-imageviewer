@@ -98,15 +98,16 @@ export function triggerRotateEnd (dom) {
   dom.rotateZ = rotation
   if (rotation > 0 && rotation < 45) {
     new To(dom, 'rotateZ', 0, 500, ease)
-  } else if (rotation >= 315) {
-    new To(dom, 'rotateZ', 360, 500, ease)
-  } else if (rotation >= 45 && rotation < 135) {
-    new To(dom, 'rotateZ', 90, 500, ease)
-  } else if (rotation >= 135 && rotation < 225) {
-    new To(dom, 'rotateZ', 180, 500, ease)
-  } else if (rotation >= 225 && rotation < 315) {
-    new To(dom, 'rotateZ', 270, 500, ease)
-  }
+  } 
+  // else if (rotation >= 315) {
+  //   new To(dom, 'rotateZ', 360, 500, ease)
+  // } else if (rotation >= 45 && rotation < 135) {
+  //   new To(dom, 'rotateZ', 90, 500, ease)
+  // } else if (rotation >= 135 && rotation < 225) {
+  //   new To(dom, 'rotateZ', 180, 500, ease)
+  // } else if (rotation >= 225 && rotation < 315) {
+  //   new To(dom, 'rotateZ', 270, 500, ease)
+  // }
 }
 
 export function triggerDoubleTab (dom, evt, imgMinScale, imgMaxScale) {
